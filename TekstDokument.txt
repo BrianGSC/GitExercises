@@ -1,4 +1,6 @@
 Linje 1 - Denne fil anvendes til test af GIT.
 Linje 2 - Tom
 Linje 3 - Tilføjer linjer og rettelser under vejs.
-Linje 4 - Tilføjet efter Git Add. - kommer den med?
+Linje 4 - Tilføjet efter Git Add. - kommer den med? Fik en fejl pga. enkelt anførselstegn i comment.
+Linje 5 - Det hjalp at anvende dobbelt anførselsteg i stedet for enkelt.
+Linje 6 - Tom
