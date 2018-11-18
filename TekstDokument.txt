@@ -1,0 +1,4 @@
+Linje 1 - Denne fil anvendes til test af GIT.
+Linje 2 - Tom
+Linje 3 - Tilføjer linjer og rettelser under vejs.
+Linje 4 - Tilføjet efter Git Add. - kommer den med?
