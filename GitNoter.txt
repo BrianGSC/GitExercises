@@ -1,0 +1,17 @@
+Dette dokument anvender UTF-8 encoding.
+
+Formål:
+Dette dokument indholder noter om anvendelsen af GIT. Noter der er startet op i forbindelse med læsning af 'Git in practice'.
+
+Indhold:
+1. Fejl ved GIT commit kommentar.
+2. Sæt GIT op til at anvende UTF-8.
+
+Fejl ved GIT Commit kommentar.
+Fik en fejl pga. enkelt anførselstegn i comment.
+Det hjalp at anvende dobbelt anførselsteg i stedet for enkelt.
+Ser ud til at enkelt kan anvendes i OSX og Linux.
+
+Sæt GIT op til at anvende UTF-8.
+git config --global gui.encoding utf-8
+
