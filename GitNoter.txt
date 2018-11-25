@@ -1,4 +1,5 @@
 Dette dokument anvender UTF-8 encoding.
+//Test tekst fra TestRepo
 
 Formål:
 Dette dokument indholder noter om anvendelsen af GIT. Noter der er startet op i forbindelse med læsning af 'Git in practice'.
