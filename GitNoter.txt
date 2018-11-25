@@ -5,13 +5,93 @@ Dette dokument indholder noter om anvendelsen af GIT. Noter der er startet op i 
 
 Indhold:
 1. Fejl ved GIT commit kommentar.
-2. Sæt GIT op til at anvende UTF-8.
+2. Sæt GIT op til at anvende UTF-8.e
+3. Git Status eksempler.
+4. Git Show eksempler.
 
-Fejl ved GIT Commit kommentar.
+1. Fejl ved GIT Commit kommentar.
 Fik en fejl pga. enkelt anførselstegn i comment.
 Det hjalp at anvende dobbelt anførselsteg i stedet for enkelt.
 Ser ud til at enkelt kan anvendes i OSX og Linux.
 
-Sæt GIT op til at anvende UTF-8.
+2 Sæt GIT op til at anvende UTF-8.
 git config --global gui.encoding utf-8
 
+3. Git status eksempler:
+a. En lokal commit før push.
+git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+b. Efter push.
+git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+4. Git show eksempler.
+A. En lokal commit før push.
+git show
+commit 9c61c1bccc963a38005069db42736080b3990642 (HEAD -> master)
+Author: Brian Christensen <tinebrian@adr.dk>
+Date:   Fri Nov 23 13:27:04 2018 +0100
+
+    Added document - GITNoter.txt for notes related to using GIT
+
+diff --git a/GitNoter.txt b/GitNoter.txt
+new file mode 100644
+index 0000000..9372232
+--- /dev/null
++++ b/GitNoter.txt
+@@ -0,0 +1,17 @@
++Dette dokument anvender UTF-8 encoding.
++
++Form<C3><A5>l:
++Dette dokument indholder noter om anvendelsen af GIT. Noter der er startet op i forbindelse med l<C3><A6>sning af 'Git in practice'.
++
++Indhold:
++1. Fejl ved GIT commit kommentar.
++2. S<C3><A6>t GIT op til at anvende UTF-8.
++
++Fejl ved GIT Commit kommentar.
++Fik en fejl pga. enkelt anf<C3><B8>rselstegn i comment.
++Det hjalp at anvende dobbelt anf<C3><B8>rselsteg i stedet for enkelt.
++Ser ud til at enkelt kan anvendes i OSX og Linux.
++
++S<C3><A6>t GIT op til at anvende UTF-8.
++git config --global gui.encoding utf-8
+
+b. Efter push.
+git show
+commit 9c61c1bccc963a38005069db42736080b3990642 (HEAD -> master, origin/master)
+Author: Brian Christensen <tinebrian@adr.dk>
+Date:   Fri Nov 23 13:27:04 2018 +0100
+
+    Added document - GITNoter.txt for notes related to using GIT
+
+diff --git a/GitNoter.txt b/GitNoter.txt
+new file mode 100644
+index 0000000..9372232
+--- /dev/null
++++ b/GitNoter.txt
+@@ -0,0 +1,17 @@
++Dette dokument anvender UTF-8 encoding.
++
++Form<C3><A5>l:
++Dette dokument indholder noter om anvendelsen af GIT. Noter der er startet op i forbindelse med l<C3><A6>sning af 'Git in practice'.
++
++Indhold:
++1. Fejl ved GIT commit kommentar.
++2. S<C3><A6>t GIT op til at anvende UTF-8.
++
++Fejl ved GIT Commit kommentar.
++Fik en fejl pga. enkelt anf<C3><B8>rselstegn i comment.
++Det hjalp at anvende dobbelt anf<C3><B8>rselsteg i stedet for enkelt.
++Ser ud til at enkelt kan anvendes i OSX og Linux.
++
++S<C3><A6>t GIT op til at anvende UTF-8.
++git config --global gui.encoding utf-8
