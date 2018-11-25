@@ -50,6 +50,24 @@ C. Places the GitExercises in that folder: C:\sub\github\GitExercises
 9. Git pull. Downloads new commits from remote and merges the remote branch into current branch.
 A. If no changes - output: Already up to date.
 
+10. Git fetch. Downloads commits but no merge.
+B. Kan ikke se Fetch ændringer i GitK. Måske anvende GitKranken eller QGit.
+C. Anbefaler at anvende Git Fetch - så kan man merge eller rebase hvis nødvendigt.
+
+11. Git branch. When you want to commit - that are not ready for public.
+A. git branch chapter-two  (No output)
+B. verify that branch were created: git branch
+C.Eg. commit broken or incomplete features.
+D. A tag is the same as a branch - but points to a specific commit. Eg. tag: Release version 1.
+E. A branch alows for two seperate developement tracks.
+F. Create a new brach when you want to work on a bug or create a new feature.
+G. Kan lave branch fra tidligere version: git branch chapter-two master~1.
+H. Track: Git branch --track : sets upstream
+
+12. Local checkout.
+A. Git checkout chapter-two (checks out a branch can be master.)
+Switched to branch 'chapter-two'
+M       GitNoter.txt
 
 
 
