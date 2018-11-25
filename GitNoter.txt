@@ -4,10 +4,53 @@ Formål:
 Dette dokument indholder noter om anvendelsen af GIT. Noter der er startet op i forbindelse med læsning af 'Git in practice'.
 
 Indhold:
+1. Starting with GIT.
 1. Fejl ved GIT commit kommentar.
 2. Sæt GIT op til at anvende UTF-8.e
 3. Git Status eksempler.
 4. Git Show eksempler.
+
+
+1.  Starting with GIT.
+A. Install git.
+B. Config git with your account. Git config --global user.name "xx". Git config --global user.email "xx"
+
+2. Create local Repo. 
+A. Git init GitExercises
+B. Add loacl working directory files (with changes) to the index stagging area for next commit. Git Add <file> or <Files>
+D.  Commit --message "Some commit text"
+ 
+3. Help on git Commands: Git --Help
+
+4. Get information on local and remote repo:
+A. Git Status
+B. Git Show
+C. Git Log. Press Q to exit.
+
+5. View history: Gitk
+
+6. View differences between commits. 
+A. Standard information: git diff master~1 master.
+B. Short information: git diff --stat master~1 master.
+
+6. Remote repository setup. (Chapter 2.
+A. Set up: git remote add origin httpe://github.com/BrianGSC/GitExercises
+B. Verify successfull remote cration: git remote --verbose
+C. Setup new remote from local repo: git push --set-upstream origin master
+
+7. Remote push.
+A. After setup (see 6.C) just use: git push.
+
+8. Git Clone - Complete copy of remote repository to local folder.
+A. Find place to clone ot: C:\sub\github
+B. git clone https://github.com/BrianGSC/GitExercises
+C. Places the GitExercises in that folder: C:\sub\github\GitExercises
+
+9. Git pull. Downloads new commits from remote and merges the remote branch into current branch.
+A. If no changes - output: Already up to date.
+
+
+
 
 1. Fejl ved GIT Commit kommentar.
 Fik en fejl pga. enkelt anførselstegn i comment.
@@ -30,6 +73,19 @@ b. Efter push.
 git status
 On branch master
 Your branch is up to date with 'origin/master'.
+
+c. En ændret fil ikke stacked.
+git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   GitNoter.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
 
 nothing to commit, working tree clean
 
