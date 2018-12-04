@@ -69,6 +69,40 @@ A. Git checkout chapter-two (checks out a branch can be master.)
 Switched to branch 'chapter-two'
 M       GitNoter.txt
 
+13. Pushing a local branch remotely
+A. Stay on the branc you want to sent to remot:
+git checkout chapter-two, then push:
+git push --set-upstream origin chapter-two
+
+14-1. Merging an existing branch into the current branch: git merge
+A. Goto master - that you want to merge into.
+git checkout master -> then run:
+git merge chapter-two.
+
+14-2. Merge conflicts.
+A. Conflict markers:  
+<<<<         -> Incomming markers
+=======      -> Branch seperator
+>>>>>>>      -> Current markers
+B. Need to handle merge conflicts manualle, by searching the file, and removeing what needs to be removed.
+C. When conflicts have been resolved, a merge commit can be made.
+
+14-3. Rebasing
+A. A rebase is a method of rewriting history in Git that is similar to a merge
+B. Changing the parent of a commit to point to another.
+C. Used to pulling changes from one branch into another and merging.
+
+15. Deleting a remote branch
+A. Maker sure you are on master: git branch
+git checkout master
+B. git push.
+C. git push --delete origin chapter-two
+
+16. Deleting the current local branch after merging
+A. Maker sure you are on master: git branch
+git checkout master
+B. Delete local branch.
+git branch --delete chapter-two
 
 
 1. Fejl ved GIT Commit kommentar.
